@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "p-ang.png",
+      "filename" : "Pang1-1.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Pang1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

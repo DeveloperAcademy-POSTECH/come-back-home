@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "p-fre.png",
+      "filename" : "Pang105.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Pang5.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

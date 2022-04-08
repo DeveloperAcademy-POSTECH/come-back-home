@@ -22,7 +22,7 @@ struct HomeView : View {
             
             VStack(){
                 
-                Image("lgloo")
+                Image("Igloo")
                 
             }
             
