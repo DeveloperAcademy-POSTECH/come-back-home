@@ -14,8 +14,8 @@
 		21FF1F372800229E006EB909 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F302800229E006EB909 /* InfoRow.swift */; };
 		21FF1F382800229E006EB909 /* FamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F312800229E006EB909 /* FamilyMember.swift */; };
 		21FF1F392800229E006EB909 /* MyRoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F322800229E006EB909 /* MyRoomButton.swift */; };
-		7035154428002496006D3229 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035154228002496006D3229 /* HomeView.swift */; };
-		7035154528002496006D3229 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035154328002496006D3229 /* LoginView.swift */; };
+		70351548280025F1006D3229 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70351546280025F1006D3229 /* LoginView.swift */; };
+		70351549280025F1006D3229 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70351547280025F1006D3229 /* HomeView.swift */; };
 		C715AE0F27FD612D004BA6BF /* ComeBackHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */; };
 		C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE1027FD612D004BA6BF /* ContentView.swift */; };
 		C715AE1327FD612F004BA6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C715AE1227FD612F004BA6BF /* Assets.xcassets */; };
@@ -61,8 +61,8 @@
 		21FF1F302800229E006EB909 /* InfoRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		21FF1F312800229E006EB909 /* FamilyMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMember.swift; sourceTree = "<group>"; };
 		21FF1F322800229E006EB909 /* MyRoomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomButton.swift; sourceTree = "<group>"; };
-		7035154228002496006D3229 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "../../../come-back-home-trash/ComeBackHome/View/HomeView.swift"; sourceTree = "<group>"; };
-		7035154328002496006D3229 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "../../../SwiftUi-Practice/Home/Home/LoginView.swift"; sourceTree = "<group>"; };
+		70351546280025F1006D3229 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "../../../SwiftUi-Practice/Home/Home/LoginView.swift"; sourceTree = "<group>"; };
+		70351547280025F1006D3229 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "../../../come-back-home-trash/ComeBackHome/View/HomeView.swift"; sourceTree = "<group>"; };
 		C715AE0B27FD612D004BA6BF /* ComeBackHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComeBackHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeBackHomeApp.swift; sourceTree = "<group>"; };
 		C715AE1027FD612D004BA6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -198,8 +198,8 @@
 			children = (
 				21FF1F2A2800229E006EB909 /* MyRoom */,
 				C715AE1027FD612D004BA6BF /* ContentView.swift */,
-				7035154228002496006D3229 /* HomeView.swift */,
-				7035154328002496006D3229 /* LoginView.swift */,
+				70351547280025F1006D3229 /* HomeView.swift */,
+				70351546280025F1006D3229 /* LoginView.swift */,
 				C715AE3C27FD63DD004BA6BF /* TodaysMenuView.swift */,
 				C715AE3827FD62D9004BA6BF /* DetailView.swift */,
 				C715AE3A27FD632F004BA6BF /* CommentModalView.swift */,
@@ -364,10 +364,10 @@
 				21FF1F332800229E006EB909 /* MyRoomView.swift in Sources */,
 				C74F063A27FDDA5100B03A4F /* AddPostView.swift in Sources */,
 				C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */,
+				70351549280025F1006D3229 /* HomeView.swift in Sources */,
 				21FF1F342800229E006EB909 /* AddFamilyView.swift in Sources */,
 				C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */,
 				C715AE3927FD62D9004BA6BF /* DetailView.swift in Sources */,
-				7035154528002496006D3229 /* LoginView.swift in Sources */,
 				C715AE4927FD65EB004BA6BF /* Menu.swift in Sources */,
 				21FF1F372800229E006EB909 /* InfoRow.swift in Sources */,
 				C715AE4527FD65D7004BA6BF /* User.swift in Sources */,
@@ -375,7 +375,7 @@
 				C715AE4727FD65E4004BA6BF /* Post.swift in Sources */,
 				C715AE4227FD656D004BA6BF /* CommentReactionView.swift in Sources */,
 				C74F063727FDC80400B03A4F /* ImagePicker.swift in Sources */,
-				7035154428002496006D3229 /* HomeView.swift in Sources */,
+				70351548280025F1006D3229 /* LoginView.swift in Sources */,
 				21FF1F352800229E006EB909 /* AccountSettingsView.swift in Sources */,
 				21FF1F362800229E006EB909 /* AppSettingsView.swift in Sources */,
 				C715AE4B27FD660C004BA6BF /* Comment.swift in Sources */,
