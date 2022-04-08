@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C715AE0F27FD612D004BA6BF /* ComeBackHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */; };
+		C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE1027FD612D004BA6BF /* ContentView.swift */; };
+		C715AE1327FD612F004BA6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C715AE1227FD612F004BA6BF /* Assets.xcassets */; };
+		C715AE1627FD612F004BA6BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C715AE1527FD612F004BA6BF /* Preview Assets.xcassets */; };
+		C715AE2027FD612F004BA6BF /* ComeBackHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE1F27FD612F004BA6BF /* ComeBackHomeTests.swift */; };
+		C715AE2A27FD612F004BA6BF /* ComeBackHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE2927FD612F004BA6BF /* ComeBackHomeUITests.swift */; };
+		C715AE2C27FD612F004BA6BF /* ComeBackHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE2B27FD612F004BA6BF /* ComeBackHomeUITestsLaunchTests.swift */; };
+		C715AE3927FD62D9004BA6BF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE3827FD62D9004BA6BF /* DetailView.swift */; };
+		C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE3A27FD632F004BA6BF /* CommentModalView.swift */; };
+		C715AE3D27FD63DD004BA6BF /* TodaysMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE3C27FD63DD004BA6BF /* TodaysMenuView.swift */; };
+		C715AE4027FD6497004BA6BF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE3F27FD6497004BA6BF /* ProfileView.swift */; };
+		C715AE4227FD656D004BA6BF /* CommentReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE4127FD656D004BA6BF /* CommentReactionView.swift */; };
+		C715AE4527FD65D7004BA6BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE4427FD65D7004BA6BF /* User.swift */; };
+		C715AE4727FD65E4004BA6BF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE4627FD65E3004BA6BF /* Post.swift */; };
+		C715AE4927FD65EB004BA6BF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE4827FD65EB004BA6BF /* Menu.swift */; };
+		C715AE4B27FD660C004BA6BF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE4A27FD660C004BA6BF /* Comment.swift */; };
+		C74F063727FDC80400B03A4F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F063627FDC80400B03A4F /* ImagePicker.swift */; };
+		C74F063A27FDDA5100B03A4F /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F063927FDDA5100B03A4F /* AddPostView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C715AE1C27FD612F004BA6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C715AE0327FD612D004BA6BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C715AE0A27FD612D004BA6BF;
+			remoteInfo = ComeBackHome;
+		};
+		C715AE2627FD612F004BA6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C715AE0327FD612D004BA6BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C715AE0A27FD612D004BA6BF;
+			remoteInfo = ComeBackHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C715AE0B27FD612D004BA6BF /* ComeBackHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComeBackHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeBackHomeApp.swift; sourceTree = "<group>"; };
+		C715AE1027FD612D004BA6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C715AE1227FD612F004BA6BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C715AE1527FD612F004BA6BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C715AE1B27FD612F004BA6BF /* ComeBackHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeBackHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C715AE1F27FD612F004BA6BF /* ComeBackHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeBackHomeTests.swift; sourceTree = "<group>"; };
+		C715AE2527FD612F004BA6BF /* ComeBackHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeBackHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C715AE2927FD612F004BA6BF /* ComeBackHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeBackHomeUITests.swift; sourceTree = "<group>"; };
+		C715AE2B27FD612F004BA6BF /* ComeBackHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeBackHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C715AE3827FD62D9004BA6BF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C715AE3A27FD632F004BA6BF /* CommentModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModalView.swift; sourceTree = "<group>"; };
+		C715AE3C27FD63DD004BA6BF /* TodaysMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysMenuView.swift; sourceTree = "<group>"; };
+		C715AE3F27FD6497004BA6BF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C715AE4127FD656D004BA6BF /* CommentReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentReactionView.swift; sourceTree = "<group>"; };
+		C715AE4427FD65D7004BA6BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C715AE4627FD65E3004BA6BF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C715AE4827FD65EB004BA6BF /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		C715AE4A27FD660C004BA6BF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		C74F063627FDC80400B03A4F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C74F063827FDD70A00B03A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C74F063927FDDA5100B03A4F /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C715AE0827FD612D004BA6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C715AE1827FD612F004BA6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C715AE2227FD612F004BA6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C715AE0227FD612D004BA6BF = {
+			isa = PBXGroup;
+			children = (
+				C715AE0D27FD612D004BA6BF /* ComeBackHome */,
+				C715AE1E27FD612F004BA6BF /* ComeBackHomeTests */,
+				C715AE2827FD612F004BA6BF /* ComeBackHomeUITests */,
+				C715AE0C27FD612D004BA6BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C715AE0C27FD612D004BA6BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C715AE0B27FD612D004BA6BF /* ComeBackHome.app */,
+				C715AE1B27FD612F004BA6BF /* ComeBackHomeTests.xctest */,
+				C715AE2527FD612F004BA6BF /* ComeBackHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C715AE0D27FD612D004BA6BF /* ComeBackHome */ = {
+			isa = PBXGroup;
+			children = (
+				C74F063827FDD70A00B03A4F /* Info.plist */,
+				C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */,
+				C715AE4C27FD669F004BA6BF /* Struct */,
+				C715AE3E27FD6442004BA6BF /* View */,
+				C715AE1227FD612F004BA6BF /* Assets.xcassets */,
+				C715AE4327FD659B004BA6BF /* SubView */,
+				C715AE1427FD612F004BA6BF /* Preview Content */,
+			);
+			path = ComeBackHome;
+			sourceTree = "<group>";
+		};
+		C715AE1427FD612F004BA6BF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C715AE1527FD612F004BA6BF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C715AE1E27FD612F004BA6BF /* ComeBackHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C715AE1F27FD612F004BA6BF /* ComeBackHomeTests.swift */,
+			);
+			path = ComeBackHomeTests;
+			sourceTree = "<group>";
+		};
+		C715AE2827FD612F004BA6BF /* ComeBackHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C715AE2927FD612F004BA6BF /* ComeBackHomeUITests.swift */,
+				C715AE2B27FD612F004BA6BF /* ComeBackHomeUITestsLaunchTests.swift */,
+			);
+			path = ComeBackHomeUITests;
+			sourceTree = "<group>";
+		};
+		C715AE3E27FD6442004BA6BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C715AE1027FD612D004BA6BF /* ContentView.swift */,
+				C715AE3C27FD63DD004BA6BF /* TodaysMenuView.swift */,
+				C715AE3827FD62D9004BA6BF /* DetailView.swift */,
+				C715AE3A27FD632F004BA6BF /* CommentModalView.swift */,
+				C74F063927FDDA5100B03A4F /* AddPostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C715AE4327FD659B004BA6BF /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				C715AE3F27FD6497004BA6BF /* ProfileView.swift */,
+				C715AE4127FD656D004BA6BF /* CommentReactionView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		C715AE4C27FD669F004BA6BF /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				C715AE4A27FD660C004BA6BF /* Comment.swift */,
+				C715AE4827FD65EB004BA6BF /* Menu.swift */,
+				C715AE4627FD65E3004BA6BF /* Post.swift */,
+				C715AE4427FD65D7004BA6BF /* User.swift */,
+				C74F063627FDC80400B03A4F /* ImagePicker.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C715AE0A27FD612D004BA6BF /* ComeBackHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C715AE2F27FD612F004BA6BF /* Build configuration list for PBXNativeTarget "ComeBackHome" */;
+			buildPhases = (
+				C715AE0727FD612D004BA6BF /* Sources */,
+				C715AE0827FD612D004BA6BF /* Frameworks */,
+				C715AE0927FD612D004BA6BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComeBackHome;
+			productName = ComeBackHome;
+			productReference = C715AE0B27FD612D004BA6BF /* ComeBackHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C715AE1A27FD612F004BA6BF /* ComeBackHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C715AE3227FD612F004BA6BF /* Build configuration list for PBXNativeTarget "ComeBackHomeTests" */;
+			buildPhases = (
+				C715AE1727FD612F004BA6BF /* Sources */,
+				C715AE1827FD612F004BA6BF /* Frameworks */,
+				C715AE1927FD612F004BA6BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C715AE1D27FD612F004BA6BF /* PBXTargetDependency */,
+			);
+			name = ComeBackHomeTests;
+			productName = ComeBackHomeTests;
+			productReference = C715AE1B27FD612F004BA6BF /* ComeBackHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C715AE2427FD612F004BA6BF /* ComeBackHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C715AE3527FD612F004BA6BF /* Build configuration list for PBXNativeTarget "ComeBackHomeUITests" */;
+			buildPhases = (
+				C715AE2127FD612F004BA6BF /* Sources */,
+				C715AE2227FD612F004BA6BF /* Frameworks */,
+				C715AE2327FD612F004BA6BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C715AE2727FD612F004BA6BF /* PBXTargetDependency */,
+			);
+			name = ComeBackHomeUITests;
+			productName = ComeBackHomeUITests;
+			productReference = C715AE2527FD612F004BA6BF /* ComeBackHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C715AE0327FD612D004BA6BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C715AE0A27FD612D004BA6BF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C715AE1A27FD612F004BA6BF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C715AE0A27FD612D004BA6BF;
+					};
+					C715AE2427FD612F004BA6BF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C715AE0A27FD612D004BA6BF;
+					};
+				};
+			};
+			buildConfigurationList = C715AE0627FD612D004BA6BF /* Build configuration list for PBXProject "ComeBackHome" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C715AE0227FD612D004BA6BF;
+			productRefGroup = C715AE0C27FD612D004BA6BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C715AE0A27FD612D004BA6BF /* ComeBackHome */,
+				C715AE1A27FD612F004BA6BF /* ComeBackHomeTests */,
+				C715AE2427FD612F004BA6BF /* ComeBackHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C715AE0927FD612D004BA6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C715AE1627FD612F004BA6BF /* Preview Assets.xcassets in Resources */,
+				C715AE1327FD612F004BA6BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C715AE1927FD612F004BA6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C715AE2327FD612F004BA6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C715AE0727FD612D004BA6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C715AE3D27FD63DD004BA6BF /* TodaysMenuView.swift in Sources */,
+				C74F063A27FDDA5100B03A4F /* AddPostView.swift in Sources */,
+				C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */,
+				C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */,
+				C715AE3927FD62D9004BA6BF /* DetailView.swift in Sources */,
+				C715AE4927FD65EB004BA6BF /* Menu.swift in Sources */,
+				C715AE4527FD65D7004BA6BF /* User.swift in Sources */,
+				C715AE4027FD6497004BA6BF /* ProfileView.swift in Sources */,
+				C715AE4727FD65E4004BA6BF /* Post.swift in Sources */,
+				C715AE4227FD656D004BA6BF /* CommentReactionView.swift in Sources */,
+				C74F063727FDC80400B03A4F /* ImagePicker.swift in Sources */,
+				C715AE4B27FD660C004BA6BF /* Comment.swift in Sources */,
+				C715AE0F27FD612D004BA6BF /* ComeBackHomeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C715AE1727FD612F004BA6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C715AE2027FD612F004BA6BF /* ComeBackHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C715AE2127FD612F004BA6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C715AE2C27FD612F004BA6BF /* ComeBackHomeUITestsLaunchTests.swift in Sources */,
+				C715AE2A27FD612F004BA6BF /* ComeBackHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C715AE1D27FD612F004BA6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C715AE0A27FD612D004BA6BF /* ComeBackHome */;
+			targetProxy = C715AE1C27FD612F004BA6BF /* PBXContainerItemProxy */;
+		};
+		C715AE2727FD612F004BA6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C715AE0A27FD612D004BA6BF /* ComeBackHome */;
+			targetProxy = C715AE2627FD612F004BA6BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C715AE2D27FD612F004BA6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C715AE2E27FD612F004BA6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C715AE3027FD612F004BA6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComeBackHome/Preview Content\"";
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComeBackHome/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacksoup.ComeBackHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C715AE3127FD612F004BA6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComeBackHome/Preview Content\"";
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComeBackHome/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacksoup.ComeBackHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C715AE3327FD612F004BA6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacksoup.ComeBackHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComeBackHome.app/ComeBackHome";
+			};
+			name = Debug;
+		};
+		C715AE3427FD612F004BA6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacksoup.ComeBackHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComeBackHome.app/ComeBackHome";
+			};
+			name = Release;
+		};
+		C715AE3627FD612F004BA6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacksoup.ComeBackHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComeBackHome;
+			};
+			name = Debug;
+		};
+		C715AE3727FD612F004BA6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY8Y957QK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacksoup.ComeBackHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComeBackHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C715AE0627FD612D004BA6BF /* Build configuration list for PBXProject "ComeBackHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C715AE2D27FD612F004BA6BF /* Debug */,
+				C715AE2E27FD612F004BA6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C715AE2F27FD612F004BA6BF /* Build configuration list for PBXNativeTarget "ComeBackHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C715AE3027FD612F004BA6BF /* Debug */,
+				C715AE3127FD612F004BA6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C715AE3227FD612F004BA6BF /* Build configuration list for PBXNativeTarget "ComeBackHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C715AE3327FD612F004BA6BF /* Debug */,
+				C715AE3427FD612F004BA6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C715AE3527FD612F004BA6BF /* Build configuration list for PBXNativeTarget "ComeBackHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C715AE3627FD612F004BA6BF /* Debug */,
+				C715AE3727FD612F004BA6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C715AE0327FD612D004BA6BF /* Project object */;
+}
