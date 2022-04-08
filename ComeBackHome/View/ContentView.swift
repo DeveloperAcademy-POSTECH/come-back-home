@@ -19,9 +19,10 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "house.fill")
                 }
-            Text("Drawer")
+            // hard-coded data must be replaced with dynamic data
+            QnaPersonalTodaysQuestionView(date: "April 7. 2022")
                 .tabItem {
-                    Image(systemName: "book.closed.fill")
+                    Image(systemName: "book")
                 }
             TodaysMenuView()
                 .tabItem {
