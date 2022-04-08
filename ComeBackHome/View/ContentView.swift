@@ -27,7 +27,7 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "fork.knife")
                 }
-            Text("Person")
+            MyRoomView(image: "Pang0", name: "Gun")
                 .tabItem {
                     Image(systemName: "person.fill")
                 }
