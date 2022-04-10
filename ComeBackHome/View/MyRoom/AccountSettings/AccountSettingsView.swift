@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AccountSettingsView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     let family = [
         FamilyMember(id: 1, name: "XXX", role: "아빠"),
         FamilyMember(id: 2, name: "XXX", role: "엄마"),
@@ -72,6 +74,11 @@ struct AccountSettingsView: View {
             .navigationTitle("계정/가족 관리")
             .navigationBarTitleDisplayMode(.inline)
             .padding(20)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action: { presentationMode.wrappedValue.dismiss() }) {
+                Image(systemName: "arrow.backward")
+            }.buttonStyle(.plain)
+                .foregroundColor(Color("Black1")))
         }
     }
 }

@@ -11,6 +11,7 @@ struct AppSettingsView: View {
     let version = UserDefaults.standard.string(forKey: "version")
     @State private var pushIsOn = UserDefaults.standard.bool(forKey: "pushIsOn")
     @State private var vibrationIsOn = UserDefaults.standard.bool(forKey: "vibrationIsOn")
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         VStack {
@@ -30,6 +31,11 @@ struct AppSettingsView: View {
         .padding(.horizontal, 20)
         .navigationTitle("앱 설정")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: Button(action: { presentationMode.wrappedValue.dismiss() }) {
+            Image(systemName: "arrow.backward")
+        }.buttonStyle(.plain)
+            .foregroundColor(Color("Black1")))
     }
 }
 
