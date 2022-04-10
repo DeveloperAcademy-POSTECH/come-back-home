@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct AppSettingsView: View {
-    let version = "v 1.0.0"
-    @State private var pushAlarmIsOn = true
-    @State private var vibrationIsOn = true
+    let version = UserDefaults.standard.string(forKey: "version")
+    @State private var pushIsOn = UserDefaults.standard.bool(forKey: "pushIsOn")
+    @State private var vibrationIsOn = UserDefaults.standard.bool(forKey: "vibrationIsOn")
     
     var body: some View {
         VStack {
-            InfoRow(left: "버전", right: version)
-            Toggle("푸시 알림", isOn: $pushAlarmIsOn)
+            InfoRow(left: "버전", right: version!)
+            Toggle("푸시 알림", isOn: $pushIsOn)
+                .onChange(of: pushIsOn) { value in
+                    UserDefaults.standard.set(value, forKey: "pushIsOn")
+                }
                 .frame(height: 46)
             Toggle("진동", isOn: $vibrationIsOn)
+                .onChange(of: vibrationIsOn) { value in
+                    UserDefaults.standard.set(value, forKey: "vibrationIsOn")
+                }
                 .frame(height: 46)
             Spacer()
         }
