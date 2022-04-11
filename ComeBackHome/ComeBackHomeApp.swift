@@ -11,6 +11,11 @@ import SwiftUI
 struct ComeBackHomeApp: App {
     
     var body: some Scene {
+        
+        WindowGroup {
+            SplashScreenView()
+        }
+        
         WindowGroup {
             ContentView()
         }
