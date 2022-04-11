@@ -17,7 +17,6 @@ struct HomeView : View {
                   NavigationView {
                       ZStack{
                       Background()
-                    
                         
                          .navigationBarTitle("Home")
                          .navigationBarTitleDisplayMode(.inline)
@@ -28,7 +27,8 @@ struct HomeView : View {
                                  } label: {
                                      NavigationLink(destination: GiftView()) {
                                          Label("Gift", systemImage: "gift.fill")
-                                             .foregroundColor(.Black1)
+                                             .foregroundColor(.MainColor)
+                                             .opacity(0.7)
                                      }
                                  }
                              }
@@ -38,16 +38,29 @@ struct HomeView : View {
                                  } label: {
                                      NavigationLink(destination: AlarmView()) {
                                          Label("Alarm", systemImage: "bell.fill")
-                                             .foregroundColor(.Black1)
+                                             .foregroundColor(.MainColor)
+                                             .opacity(0.7)
                                      }
                                  }
                              }
                          }
-                     
+                          Button {
+                          } label: {
+                              NavigationLink(destination: EmotionView()) {
+                                  Image("Pang2")
+                                      .resizable()
+                                      .aspectRatio(contentMode: .fit)
+                                      .frame(width: 60, height: 60)
+                                      .padding(.leading, 280)
+                                      .padding(.top, 400)
+                                  
+                              }
+                          }
+                      }
                     }
                 }
            }
-}
+
                
 
 

@@ -1,5 +1,5 @@
 //
-//  GitView.swift
+//  MyPangView.swift
 //  ComeBackHome
 //
 //  Created by Jun.Mac on 2022/04/11.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GiftView : View {
+struct MyPangView : View {
       
            
            var body: some View {
@@ -55,10 +55,10 @@ struct GiftView : View {
 
 
 
-struct GiftView_Previews: PreviewProvider {
+struct MyPangView_Previews: PreviewProvider {
     static var previews: some View {
        
-        GiftView()
+        MyPangView()
         
     }
 }

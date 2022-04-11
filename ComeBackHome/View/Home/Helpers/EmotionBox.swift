@@ -26,7 +26,7 @@ struct EmotionBox : View {
                     Image(imageList[index])
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(15.0)
+                        .padding(10.0)
                                               
                         }
                   
@@ -42,7 +42,7 @@ struct EmotionBox : View {
                     Image(imageList[index])
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(15.0)
+                        .padding(10.0)
                                               
                         }
                    

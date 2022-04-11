@@ -34,16 +34,14 @@
 		70FBF1882803F8D700E293F7 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1872803F8D700E293F7 /* SplashScreenView.swift */; };
 		70FBF18A2803F93400E293F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1892803F93400E293F7 /* LoginView.swift */; };
 		70FBF18C2803F95000E293F7 /* EmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF18B2803F95000E293F7 /* EmotionView.swift */; };
-		70FBF18E2803F98400E293F7 /* BellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF18D2803F98400E293F7 /* BellView.swift */; };
 		70FBF1902803F99700E293F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF18F2803F99700E293F7 /* HomeView.swift */; };
 		70FBF1922803F9B900E293F7 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1912803F9B900E293F7 /* AlarmView.swift */; };
-		70FBF1942803F9D300E293F7 /* GitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1932803F9D300E293F7 /* GitView.swift */; };
-		70FBF1962803F9EB00E293F7 /* MyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1952803F9EB00E293F7 /* MyNavigationView.swift */; };
 		70FBF1982803FA1400E293F7 /* EmotionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1972803FA1400E293F7 /* EmotionBox.swift */; };
 		70FBF19A2803FA2D00E293F7 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1992803FA2D00E293F7 /* Background.swift */; };
 		70FBF19C2803FA4400E293F7 /* BackgroundOpacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF19B2803FA4400E293F7 /* BackgroundOpacity.swift */; };
 		70FBF19E2803FA5A00E293F7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF19D2803FA5A00E293F7 /* Color.swift */; };
 		70FBF1A22803FA8800E293F7 /* GiftBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1A12803FA8800E293F7 /* GiftBox.swift */; };
+		70FBF1A4280453D400E293F7 /* MyPangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1A3280453D400E293F7 /* MyPangView.swift */; };
 		C715AE0F27FD612D004BA6BF /* ComeBackHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */; };
 		C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE1027FD612D004BA6BF /* ContentView.swift */; };
 		C715AE1327FD612F004BA6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C715AE1227FD612F004BA6BF /* Assets.xcassets */; };
@@ -109,16 +107,14 @@
 		70FBF1872803F8D700E293F7 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		70FBF1892803F93400E293F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		70FBF18B2803F95000E293F7 /* EmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionView.swift; sourceTree = "<group>"; };
-		70FBF18D2803F98400E293F7 /* BellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellView.swift; sourceTree = "<group>"; };
 		70FBF18F2803F99700E293F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		70FBF1912803F9B900E293F7 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
-		70FBF1932803F9D300E293F7 /* GitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitView.swift; sourceTree = "<group>"; };
-		70FBF1952803F9EB00E293F7 /* MyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationView.swift; sourceTree = "<group>"; };
 		70FBF1972803FA1400E293F7 /* EmotionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionBox.swift; sourceTree = "<group>"; };
 		70FBF1992803FA2D00E293F7 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		70FBF19B2803FA4400E293F7 /* BackgroundOpacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOpacity.swift; sourceTree = "<group>"; };
 		70FBF19D2803FA5A00E293F7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		70FBF1A12803FA8800E293F7 /* GiftBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftBox.swift; sourceTree = "<group>"; };
+		70FBF1A3280453D400E293F7 /* MyPangView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPangView.swift; sourceTree = "<group>"; };
 		C715AE0B27FD612D004BA6BF /* ComeBackHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComeBackHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeBackHomeApp.swift; sourceTree = "<group>"; };
 		C715AE1027FD612D004BA6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,11 +218,9 @@
 				70FBF1872803F8D700E293F7 /* SplashScreenView.swift */,
 				70FBF1892803F93400E293F7 /* LoginView.swift */,
 				70FBF18B2803F95000E293F7 /* EmotionView.swift */,
-				70FBF18D2803F98400E293F7 /* BellView.swift */,
 				70FBF18F2803F99700E293F7 /* HomeView.swift */,
 				70FBF1912803F9B900E293F7 /* AlarmView.swift */,
-				70FBF1932803F9D300E293F7 /* GitView.swift */,
-				70FBF1952803F9EB00E293F7 /* MyNavigationView.swift */,
+				70FBF1A3280453D400E293F7 /* MyPangView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -481,7 +475,6 @@
 				2535DD4928002EB100A2D118 /* TextBlock.swift in Sources */,
 				21FF1F332800229E006EB909 /* MyRoomView.swift in Sources */,
 				2535DD3928002E7E00A2D118 /* QnaListView.swift in Sources */,
-				70FBF1962803F9EB00E293F7 /* MyNavigationView.swift in Sources */,
 				70FBF1A22803FA8800E293F7 /* GiftBox.swift in Sources */,
 				C74F063A27FDDA5100B03A4F /* AddPostView.swift in Sources */,
 				70FBF1922803F9B900E293F7 /* AlarmView.swift in Sources */,
@@ -494,7 +487,6 @@
 				70FBF1882803F8D700E293F7 /* SplashScreenView.swift in Sources */,
 				70FBF19E2803FA5A00E293F7 /* Color.swift in Sources */,
 				C715AE3927FD62D9004BA6BF /* DetailView.swift in Sources */,
-				70FBF1942803F9D300E293F7 /* GitView.swift in Sources */,
 				2535DD3C28002E7E00A2D118 /* QnaTodaysQuestionView.swift in Sources */,
 				C715AE4927FD65EB004BA6BF /* Menu.swift in Sources */,
 				21FF1F372800229E006EB909 /* InfoRow.swift in Sources */,
@@ -503,7 +495,6 @@
 				C715AE4027FD6497004BA6BF /* ProfileView.swift in Sources */,
 				C715AE4727FD65E4004BA6BF /* Post.swift in Sources */,
 				70FBF18A2803F93400E293F7 /* LoginView.swift in Sources */,
-				70FBF18E2803F98400E293F7 /* BellView.swift in Sources */,
 				2535DD4E28002ED000A2D118 /* AnswerWithProfile.swift in Sources */,
 				2535DD4628002EB100A2D118 /* ProfileImage.swift in Sources */,
 				C715AE4227FD656D004BA6BF /* CommentReactionView.swift in Sources */,
@@ -521,6 +512,7 @@
 				2535DD3D28002E7E00A2D118 /* QnaAnswerWithProfileView.swift in Sources */,
 				2535DD3828002E7E00A2D118 /* QnaFamilyView.swift in Sources */,
 				21FF1F362800229E006EB909 /* AppSettingsView.swift in Sources */,
+				70FBF1A4280453D400E293F7 /* MyPangView.swift in Sources */,
 				C715AE4B27FD660C004BA6BF /* Comment.swift in Sources */,
 				2535DD3A28002E7E00A2D118 /* QnaPersonalTodaysQuestionView.swift in Sources */,
 				21FF1F382800229E006EB909 /* FamilyMember.swift in Sources */,
