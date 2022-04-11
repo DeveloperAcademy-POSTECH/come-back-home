@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		21FF1F332800229E006EB909 /* MyRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2B2800229E006EB909 /* MyRoomView.swift */; };
-		21FF1F342800229E006EB909 /* AddFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2D2800229E006EB909 /* AddFamilyView.swift */; };
 		21FF1F352800229E006EB909 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */; };
 		21FF1F362800229E006EB909 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2F2800229E006EB909 /* AppSettingsView.swift */; };
 		21FF1F372800229E006EB909 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F302800229E006EB909 /* InfoRow.swift */; };
@@ -72,7 +71,6 @@
 
 /* Begin PBXFileReference section */
 		21FF1F2B2800229E006EB909 /* MyRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomView.swift; sourceTree = "<group>"; };
-		21FF1F2D2800229E006EB909 /* AddFamilyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyView.swift; sourceTree = "<group>"; };
 		21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
 		21FF1F2F2800229E006EB909 /* AppSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
 		21FF1F302800229E006EB909 /* InfoRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 		21FF1F2C2800229E006EB909 /* AccountSettings */ = {
 			isa = PBXGroup;
 			children = (
-				21FF1F2D2800229E006EB909 /* AddFamilyView.swift */,
 				21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */,
 				21FF1F2F2800229E006EB909 /* AppSettingsView.swift */,
 				21FF1F302800229E006EB909 /* InfoRow.swift */,
@@ -436,7 +433,6 @@
 				2535DD4028002E7E00A2D118 /* QnaTextBox.swift in Sources */,
 				2535DD3F28002E7E00A2D118 /* QnaQuestionRow.swift in Sources */,
 				C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */,
-				21FF1F342800229E006EB909 /* AddFamilyView.swift in Sources */,
 				C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */,
 				C715AE3927FD62D9004BA6BF /* DetailView.swift in Sources */,
 				2535DD3C28002E7E00A2D118 /* QnaTodaysQuestionView.swift in Sources */,

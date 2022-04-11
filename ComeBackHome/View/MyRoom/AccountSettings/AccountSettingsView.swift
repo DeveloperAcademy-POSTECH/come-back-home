@@ -56,17 +56,6 @@ struct AccountSettingsView: View {
                     ForEach(family) { member in
                         InfoRow(left: member.role, right: member.name)
                     }
-                    
-                    NavigationLink(destination: AddFamilyView()) {
-                        HStack(spacing: 16) {
-                            Image(systemName: "plus")
-                                .foregroundColor(Color("MainColor"))
-                            Text("가족 추가")
-                            Spacer()
-                        }.padding(.horizontal, 5)
-                    }
-                    .buttonStyle(.plain)
-                    .padding(.vertical, 15)
                 }
                 
                 Spacer()
