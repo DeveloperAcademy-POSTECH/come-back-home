@@ -14,6 +14,7 @@
 		21D778BB28055D5D008519CA /* FamilySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D778BA28055D5D008519CA /* FamilySelectionView.swift */; };
 		21D778BD28055D72008519CA /* FamilySelectionButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D778BC28055D72008519CA /* FamilySelectionButtonContent.swift */; };
 		21D778BF28056D48008519CA /* FamilyCodeGenerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D778BE28056D48008519CA /* FamilyCodeGenerationView.swift */; };
+		21D778C328057C05008519CA /* FamilyCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D778C228057C05008519CA /* FamilyCodeInputView.swift */; };
 		21FF1F332800229E006EB909 /* MyRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2B2800229E006EB909 /* MyRoomView.swift */; };
 		21FF1F342800229E006EB909 /* AddFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2D2800229E006EB909 /* AddFamilyView.swift */; };
 		21FF1F352800229E006EB909 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */; };
@@ -85,6 +86,7 @@
 		21D778BA28055D5D008519CA /* FamilySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySelectionView.swift; sourceTree = "<group>"; };
 		21D778BC28055D72008519CA /* FamilySelectionButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySelectionButtonContent.swift; sourceTree = "<group>"; };
 		21D778BE28056D48008519CA /* FamilyCodeGenerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCodeGenerationView.swift; sourceTree = "<group>"; };
+		21D778C228057C05008519CA /* FamilyCodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCodeInputView.swift; sourceTree = "<group>"; };
 		21FF1F2B2800229E006EB909 /* MyRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomView.swift; sourceTree = "<group>"; };
 		21FF1F2D2800229E006EB909 /* AddFamilyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyView.swift; sourceTree = "<group>"; };
 		21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				703713BE280028AC00596219 /* LoginView.swift */,
 				21D778BA28055D5D008519CA /* FamilySelectionView.swift */,
 				21D778BE28056D48008519CA /* FamilyCodeGenerationView.swift */,
+				21D778C228057C05008519CA /* FamilyCodeInputView.swift */,
 				21D778B028054656008519CA /* Helpers */,
 			);
 			path = FirstTimeUse;
@@ -472,6 +475,7 @@
 				C74F063A27FDDA5100B03A4F /* AddPostView.swift in Sources */,
 				21D778B62805546D008519CA /* StartingView.swift in Sources */,
 				2535DD4028002E7E00A2D118 /* QnaTextBox.swift in Sources */,
+				21D778C328057C05008519CA /* FamilyCodeInputView.swift in Sources */,
 				21D778BD28055D72008519CA /* FamilySelectionButtonContent.swift in Sources */,
 				2535DD3F28002E7E00A2D118 /* QnaQuestionRow.swift in Sources */,
 				C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */,

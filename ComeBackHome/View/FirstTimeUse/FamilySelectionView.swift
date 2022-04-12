@@ -14,7 +14,9 @@ struct FamilySelectionView: View {
                 FamilySelectionButtonContent(icon: "plus", message: "처음 가입하는 가족 구성원이신가요?", title: "새 가족 추가")
             }
             
-            FamilySelectionButtonContent(icon: "personalhotspot", message: "이미 가입한 가족 구성원이 있나요?", title: "기존 가족과 연결하기")
+            NavigationLink(destination: FamilyCodeInputView()) {
+                FamilySelectionButtonContent(icon: "personalhotspot", message: "이미 가입한 가족 구성원이 있나요?", title: "기존 가족과 연결하기")
+            }
         }
         .padding(.horizontal, 20)
         .navigationBarHidden(true)
