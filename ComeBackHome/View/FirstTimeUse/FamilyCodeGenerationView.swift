@@ -25,16 +25,22 @@ struct FamilyCodeGenerationView: View {
                 .fontWeight(.bold)
                 .padding(.bottom, 32)
             
-            ButtonContent(text: "초대코드 복사", textColor: Color("MainColor"), backgroundColor: Color("Black5"))
+            Button(action: {}) {
+                ButtonContent(text: "초대코드 복사", textColor: Color("MainColor"), backgroundColor: Color("Black5"))
+            }
+            
+            NavigationLink(destination: HomeView()) {
+                ButtonContent(text: "홈화면으로 가기", textColor: .white, backgroundColor: Color("MainColor"))
+            }
         }
         .padding(.horizontal, 20)
-        .padding(.bottom, 397)
+        .padding(.bottom, 335)
         .navigationBarBackButtonHidden(true)
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: { presentationMode.wrappedValue.dismiss() }) {
                     Image(systemName: "arrow.backward")
-                        .foregroundColor(Color("Black3"))
+                        .foregroundColor(Color("Black1"))
                 }.buttonStyle(.plain)
             }
         }
