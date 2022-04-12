@@ -17,16 +17,13 @@ struct LoginView : View {
 }
 
 struct Login : View {
-    
     @State var email = ""
     @State var pass = ""
     @Binding var index : Int
     
     var body: some View{
         VStack(){
-            
             VStack(alignment: .leading, spacing: 10){
-                
                 Text("환영합니다!\n컴백홈에 로그인 해주세요")
                     .font(.system(size: 22))
                     .fontWeight(.bold)
@@ -63,15 +60,13 @@ struct Login : View {
                     }.padding(.bottom, 30)
            
             VStack(){
-               
-                    Button(action: {}) {
-                        ButtonContent(text: "로그인", textColor: .white, backgroundColor: Color("MainColor"))
-                    }
+                Button(action: {}) {
+                    ButtonContent(text: "로그인", textColor: .white, backgroundColor: Color("MainColor"))
+                }
 
-                    Button(action: {}) {
-                        ButtonContent(text: "카카오로 3초안에 로그인하기", textColor: .black, backgroundColor: Color(red: 1.013, green: 0.914, blue: -0.32))
-                    }
-                
+                Button(action: {}) {
+                    ButtonContent(text: "카카오로 3초안에 로그인하기", textColor: .black, backgroundColor: Color(red: 1.013, green: 0.914, blue: -0.32))
+                }
             }.padding(.bottom, 10)
             
             HStack(){
