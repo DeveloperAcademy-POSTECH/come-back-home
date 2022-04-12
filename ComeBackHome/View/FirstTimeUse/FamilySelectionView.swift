@@ -10,7 +10,9 @@ import SwiftUI
 struct FamilySelectionView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 12) {
-            FamilySelectionButtonContent(icon: "plus", message: "처음 가입하는 가족 구성원이신가요?", title: "새 가족 추가")
+            NavigationLink(destination: FamilyCodeGenerationView(code: "FC08T72")) {
+                FamilySelectionButtonContent(icon: "plus", message: "처음 가입하는 가족 구성원이신가요?", title: "새 가족 추가")
+            }
             
             FamilySelectionButtonContent(icon: "personalhotspot", message: "이미 가입한 가족 구성원이 있나요?", title: "기존 가족과 연결하기")
         }
