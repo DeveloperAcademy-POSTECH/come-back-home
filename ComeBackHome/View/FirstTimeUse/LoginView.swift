@@ -11,10 +11,8 @@ struct LoginView : View {
     
     @State var index = 0
     
-    var body: some View{
-        
+    var body: some View {
         Login(index: self.$index)
-                                       
     }
 }
 
@@ -84,79 +82,45 @@ struct Login : View {
             VStack(){
                
                     Button(action: {}) {
-                        
-                        Text("로그인")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                            .padding(.vertical)
-                            .padding(.horizontal, 145)
-                            .background(Color(red: -0.291, green: 0.623, blue: 0.765))
-                            .cornerRadius(8)
-                        }
+                        ButtonContent(text: "로그인", textColor: .white, backgroundColor: Color("MainColor"))
+                    }
 
                     Button(action: {}) {
-                            
-                        Text("카카오로 3초안에 로그인하기")
-                            .foregroundColor(.black)
-                            .fontWeight(.bold)
-                            .padding(.vertical)
-                            .padding(.horizontal, 70)
-                            .background(Color(red: 1.013, green: 0.914, blue: -0.32))
-                            .cornerRadius(8)
-                              
-                        }
+                        ButtonContent(text: "카카오로 3초안에 로그인하", textColor: .black, backgroundColor: Color(red: 1.013, green: 0.914, blue: -0.32))
+                    }
                 
             }.padding(.bottom, 10)
             
             HStack(){
-                
-                    Text("계정을 잊으셨나요?")
-                        .font(.system(size: 14))
+                Text("계정을 잊으셨나요?")
+                    .font(.system(size: 14))
                
                 Button(action: {}) {
-                        
-                    Text("아이디 찾기")
-                        .font(.system(size: 14))
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: -0.011, green: 0.625, blue: 0.764))
-                       
-                          
-                    }
-               
+                    LinkText("아이디 찾기")
+                }
+                
                 Text("또는")
                     .font(.system(size: 14))
                     
                 Button(action: {}) {
-                        
-                    Text("비밀번호 찾기")
-                        .font(.system(size: 14))
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: -0.011, green: 0.625, blue: 0.764))
-                      
-                    }
-                }.padding(.bottom, 60)
+                    LinkText("비밀번호 찾기")
+                }
+            }.padding(.bottom, 60)
             
             HStack(){
-                
                 Text("아직 회원이 아닌가요?")
                     .font(.system(size: 14))
                 
                 Button(action: {}) {
-                        
-                    Text("회원가입 ")
-                        .font(.system(size: 14))
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: -0.011, green: 0.625, blue: 0.764))
-                      
-                    }
+                    LinkText("회원가입")
                 }
             }
         }
     }
+}
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-       
         LoginView()
     }
 }
