@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct ComeBackHomeApp: App {
+    @ObservedObject var appState = AppState()
     
     var body: some Scene {
         
@@ -18,6 +19,7 @@ struct ComeBackHomeApp: App {
         
         WindowGroup {
             ContentView()
+                .environmentObject(appState)
         }
     }
 }

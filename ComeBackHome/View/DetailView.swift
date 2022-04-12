@@ -9,7 +9,9 @@ import SwiftUI
 
 struct DetailView: View {
     @State private var isShowingSheet = false
-    @Environment(\.presentationMode) var presentationMode
+    @Binding var isShowingBackButton: Bool
+    
+    @Environment(\.presentationMode) var presentation
     
     var post: Post?
     
@@ -18,9 +20,10 @@ struct DetailView: View {
             HStack {
                 ProfileView(name: post!.author?.name ?? "", fontSize: .title3, width: 47, height: 47, color: Color("Black1"), img: Image("Pang0"))
                     .padding(.horizontal, 20)
-//                    .onTapGesture {
-//                        presentationMode.wrappedValue.dismiss()
-//                    }
+                    .padding(.top, 10)
+                    .onTapGesture {
+                        presentation.wrappedValue.dismiss()
+                    }
                 Spacer()
             }
             ScrollView {
@@ -28,8 +31,16 @@ struct DetailView: View {
                     DetailMenuView(menu: post!.menuArr[$0], title: post!.menuArr[$0].title, detail: post!.menuArr[$0].text, heart: post!.menuArr[$0].heart, comment: post!.menuArr[$0].commentArr, author: post!.author!)
                 }
             }
+            .onAppear {
+                isShowingBackButton = true
+            }
+            .onDisappear {
+                isShowingBackButton = false
+            }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
+        
     }
 }
 
@@ -63,12 +74,12 @@ struct DetailMenuView: View {
                 }
                 .frame(height: 26)
                 .foregroundColor(Color("Black1"))
-                .padding(.top, 16)
+                .padding(.top, 10)
                 
                 Text("\(detail)")
                     .font(.body)
                     .frame(height: 20)
-                    .padding(.top, 7)
+                    .padding(.top, 0)
                 
             }
             .padding(.horizontal, 20)
@@ -81,8 +92,8 @@ struct DetailMenuView: View {
                 }
                 Spacer()
             }
-            .padding(.top, 10)
-            .padding(.bottom, 20)
+            .padding(.top, 7)
+            .padding(.bottom, 17)
             
             if !isHidden {
                 VStack (alignment: .leading) {
@@ -93,10 +104,3 @@ struct DetailMenuView: View {
         }
     }
 }
-
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
-    }
-}
-

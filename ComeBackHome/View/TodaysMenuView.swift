@@ -46,26 +46,37 @@ var post: [Post] = [
 struct TodaysMenuView: View {
     
     @State var isShowingSheet = false
+    @State var isShowingBackButton = false
+    
+    @EnvironmentObject var appState: AppState
     
     var body: some View {
         NavigationView {
             VStack{
-                CalendarView()
-                ContentListView()
+                ContentListView(isShowingBackButton: $isShowingBackButton)
+                    .id(appState.menuRootViewId)
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-
                 ToolbarItem(placement: .principal) {
                     Text("오늘의 메뉴")
                         .font(.title3)
                         .accessibilityAddTraits(.isHeader)
                 }
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         isShowingSheet.toggle()
                     } label: {
                         Label("Add", systemImage: "camera.fill")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    if isShowingBackButton {
+                        Button {
+                            appState.menuRootViewId = UUID()
+                        } label: {
+                            Label("Back", systemImage: "chevron.backward")
+                        }
                     }
                 }
             }
@@ -86,43 +97,36 @@ struct CalendarView: View {
     @State var date = Date()
     
     var body: some View {
-        let today = Date()
-        VStack {
             HStack {
                 DatePicker("label", selection: $date, in: ...Date(), displayedComponents: [.date])
                     .datePickerStyle(CompactDatePickerStyle())
                     .labelsHidden()
+                    .padding(.vertical, 15)
 //                Text("\(today, formatter: dateFormat)")
 //                    .font(.system(size: 18))
 //                    .fontWeight(.bold)
 //                    .padding(.horizontal, 8)
                 Spacer()
             }
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(1..<31){
-                        Text("\($0)").padding(10)
-                    }
-                }
-            }
-        }
-        .padding(.horizontal, 20)
     }
 }
 
 struct ContentListView: View {
+    @Binding var isShowingBackButton: Bool
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack {
-                    NavigationLink(destination: DetailView(post: post[0])) {
+                    CalendarView()
+                    NavigationLink(destination: DetailView(isShowingBackButton: $isShowingBackButton, post: post[0]).navigationBarBackButtonHidden(true)) {
                         HStack {
                             ProfileView(name: (post[0].author?.name)!, fontSize: .title3, width: 47, height: 47, img: Image("Pang0"))
                             Spacer()
                         }
                     }
                     ImageScrollView(menuArr: post[0].menuArr)
-                        .padding(.top, 14)
+                        .padding(.top, 5)
                         .padding(.bottom, 18)
                     Divider()
                         .frame(width: 350)
@@ -130,7 +134,7 @@ struct ContentListView: View {
                 ForEach(1..<post.count) {
                     let p = post[$0]
                     VStack {
-                        NavigationLink(destination: DetailView(post: p)) {
+                        NavigationLink(destination: DetailView(isShowingBackButton: $isShowingBackButton, post: p).navigationBarBackButtonHidden(true)) {
                             HStack {
                                 ProfileView(name: (p.author?.name)!, width: 45, height: 45, color: Color("Black1"), img: Image("Pang0"))
                                 Spacer()
