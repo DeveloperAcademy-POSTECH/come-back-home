@@ -86,7 +86,7 @@ struct Login : View {
                     }
 
                     Button(action: {}) {
-                        ButtonContent(text: "카카오로 3초안에 로그인하", textColor: .black, backgroundColor: Color(red: 1.013, green: 0.914, blue: -0.32))
+                        ButtonContent(text: "카카오로 3초안에 로그인하기", textColor: .black, backgroundColor: Color(red: 1.013, green: 0.914, blue: -0.32))
                     }
                 
             }.padding(.bottom, 10)
