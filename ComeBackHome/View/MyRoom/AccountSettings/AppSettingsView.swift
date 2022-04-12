@@ -32,10 +32,14 @@ struct AppSettingsView: View {
         .navigationTitle("앱 설정")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: Button(action: { presentationMode.wrappedValue.dismiss() }) {
-            Image(systemName: "arrow.backward")
-        }.buttonStyle(.plain)
-            .foregroundColor(Color("Black1")))
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: { presentationMode.wrappedValue.dismiss() }) {
+                    Image(systemName: "arrow.backward")
+                }.buttonStyle(.plain)
+                    .foregroundColor(Color("Black1"))
+            }
+        }
     }
 }
 

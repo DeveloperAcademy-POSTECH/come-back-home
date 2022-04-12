@@ -64,10 +64,15 @@ struct AccountSettingsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .padding(20)
             .navigationBarBackButtonHidden(true)
-            .navigationBarItems(leading: Button(action: { presentationMode.wrappedValue.dismiss() }) {
-                Image(systemName: "arrow.backward")
-            }.buttonStyle(.plain)
-                .foregroundColor(Color("Black1")))
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: { presentationMode.wrappedValue.dismiss() }) {
+                        Image(systemName: "arrow.backward")
+                    }
+                    .buttonStyle(.plain)
+                    .foregroundColor(Color("Black1"))
+                }
+            }
         }
     }
 }
