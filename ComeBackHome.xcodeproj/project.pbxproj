@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		214E6FFC280515F800BB75E4 /* ButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214E6FFB280515F800BB75E4 /* ButtonContent.swift */; };
 		21FF1F332800229E006EB909 /* MyRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2B2800229E006EB909 /* MyRoomView.swift */; };
-		21FF1F342800229E006EB909 /* AddFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2D2800229E006EB909 /* AddFamilyView.swift */; };
 		21FF1F352800229E006EB909 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */; };
 		21FF1F362800229E006EB909 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2F2800229E006EB909 /* AppSettingsView.swift */; };
 		21FF1F372800229E006EB909 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F302800229E006EB909 /* InfoRow.swift */; };
@@ -80,7 +79,6 @@
 /* Begin PBXFileReference section */
 		214E6FFB280515F800BB75E4 /* ButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonContent.swift; sourceTree = "<group>"; };
 		21FF1F2B2800229E006EB909 /* MyRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomView.swift; sourceTree = "<group>"; };
-		21FF1F2D2800229E006EB909 /* AddFamilyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyView.swift; sourceTree = "<group>"; };
 		21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
 		21FF1F2F2800229E006EB909 /* AppSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
 		21FF1F302800229E006EB909 /* InfoRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 		21FF1F2C2800229E006EB909 /* AccountSettings */ = {
 			isa = PBXGroup;
 			children = (
-				21FF1F2D2800229E006EB909 /* AddFamilyView.swift */,
 				21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */,
 				21FF1F2F2800229E006EB909 /* AppSettingsView.swift */,
 				21FF1F302800229E006EB909 /* InfoRow.swift */,

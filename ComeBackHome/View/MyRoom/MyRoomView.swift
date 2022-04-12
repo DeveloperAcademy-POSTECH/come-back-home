@@ -35,10 +35,14 @@ struct MyRoomView: View {
             }
             .navigationTitle("마이룸")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(trailing: NavigationLink(destination: AppSettingsView()) {
-                Image(systemName: "gearshape.fill")
-                    .foregroundColor(Color("Black2"))
-            })
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: AppSettingsView()) {
+                        Image(systemName: "gearshape.fill")
+                            .foregroundColor(Color("Black2"))
+                    }
+                }
+            }
         }
     }
 }
