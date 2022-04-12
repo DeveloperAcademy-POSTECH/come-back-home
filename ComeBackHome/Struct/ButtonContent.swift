@@ -15,12 +15,12 @@ struct ButtonContent: View {
     var body: some View {
         Text(text)
             .foregroundColor(textColor)
+            .font(.headline)
             .fontWeight(.bold)
             .padding(.vertical)
             .frame(maxWidth: .infinity)
             .background(backgroundColor)
             .cornerRadius(8)
-            .padding(.horizontal, 20)
     }
 }
 
