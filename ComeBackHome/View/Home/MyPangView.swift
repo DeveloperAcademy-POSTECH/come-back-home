@@ -10,6 +10,7 @@ import SwiftUI
 struct MyPangView : View {
       
     @State var index = 0
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
            var body: some View {
                ZStack{
@@ -63,7 +64,19 @@ struct MyPangView : View {
                 
                   
                        
+               }
+               .navigationBarBackButtonHidden(true)
+               .navigationBarTitle("마이 펭귄")
+               .foregroundColor(.white)
+               .navigationBarTitleDisplayMode(.inline)
+               .toolbar {
+                   ToolbarItem(placement: .navigationBarLeading) {
+                       Button(action: { presentationMode.wrappedValue.dismiss() }) {
+                           Image(systemName: "arrow.backward")
+                               .foregroundColor(.white)
+                       }.buttonStyle(.plain)
                    }
+               }
                     
                }
               
@@ -76,7 +89,9 @@ struct MyPangView : View {
 struct MyPangView_Previews: PreviewProvider {
     static var previews: some View {
        
-        MyPangView()
+        NavigationView {
+            MyPangView()
+        }
         
     }
 }

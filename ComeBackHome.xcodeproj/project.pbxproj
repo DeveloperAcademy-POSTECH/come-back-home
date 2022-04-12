@@ -32,7 +32,6 @@
 		2535DD4D28002ED000A2D118 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD4A28002ED000A2D118 /* Question.swift */; };
 		2535DD4E28002ED000A2D118 /* AnswerWithProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD4B28002ED000A2D118 /* AnswerWithProfile.swift */; };
 		2535DD4F28002ED000A2D118 /* Qna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD4C28002ED000A2D118 /* Qna.swift */; };
-		7042DD7A280526BC0098E5F1 /* ShowAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042DD79280526BC0098E5F1 /* ShowAlarm.swift */; };
 		7042DD8028054EC70098E5F1 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042DD7F28054EC70098E5F1 /* ColorPalette.swift */; };
 		70FBF1882803F8D700E293F7 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1872803F8D700E293F7 /* SplashScreenView.swift */; };
 		70FBF1902803F99700E293F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF18F2803F99700E293F7 /* HomeView.swift */; };
@@ -104,7 +103,6 @@
 		2535DD4A28002ED000A2D118 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		2535DD4B28002ED000A2D118 /* AnswerWithProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerWithProfile.swift; sourceTree = "<group>"; };
 		2535DD4C28002ED000A2D118 /* Qna.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Qna.swift; sourceTree = "<group>"; };
-		7042DD79280526BC0098E5F1 /* ShowAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlarm.swift; sourceTree = "<group>"; };
 		7042DD7F28054EC70098E5F1 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		70FBF1872803F8D700E293F7 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		70FBF18F2803F99700E293F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -233,7 +231,6 @@
 			children = (
 				70FBF1992803FA2D00E293F7 /* Background.swift */,
 				70FBF19B2803FA4400E293F7 /* BackgroundOpacity.swift */,
-				7042DD79280526BC0098E5F1 /* ShowAlarm.swift */,
 				7042DD7F28054EC70098E5F1 /* ColorPalette.swift */,
 			);
 			path = Helpers;
@@ -507,7 +504,6 @@
 				2535DD4728002EB100A2D118 /* ConfirmButton.swift in Sources */,
 				2535DD4828002EB100A2D118 /* QnaProfileView.swift in Sources */,
 				2535DD4F28002ED000A2D118 /* Qna.swift in Sources */,
-				7042DD7A280526BC0098E5F1 /* ShowAlarm.swift in Sources */,
 				70FBF19C2803FA4400E293F7 /* BackgroundOpacity.swift in Sources */,
 				2535DD3E28002E7E00A2D118 /* QnaTextEditorBox.swift in Sources */,
 				21FF1F352800229E006EB909 /* AccountSettingsView.swift in Sources */,

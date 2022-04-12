@@ -25,6 +25,7 @@ struct HomeView : View {
                                      NavigationLink(destination: MyPangView()) {
                                          Label("MyPang", systemImage: "person.fill")
                                              .opacity(0.7)
+                                             
                                      }
                                  }
                              }
@@ -39,6 +40,63 @@ struct HomeView : View {
                                  }
                              }
                          }
+                          VStack(spacing: 15){
+                            
+                              ZStack{
+                                  RoundedRectangle(cornerRadius: 10)
+                                      .fill(Color.GraySky)
+                                      .frame(width: 350, height: 80)
+                                      .opacity(0.7)
+                                  
+                                  HStack{
+                                      VStack(alignment: .leading, spacing: 5){
+                                          
+                                         
+                                              Text("D - 3")
+                                                  .font(.system(size: 24))
+                                                  .fontWeight(.bold)
+                                                  .foregroundColor(Color.MainColor)
+                                    
+                                              
+                                          Text("막내펭귄의 생일이 3일 남았어요!")
+                                              .font(.system(size: 18))
+                                              .fontWeight(.medium)
+                                              .foregroundColor(Color.black)
+                                              
+                                      }.padding(.trailing, 60)
+                                      
+                                      Image(systemName: "xmark.circle.fill")
+                                          .font(.system(size: 15))
+                                          .foregroundColor(Color.gray)
+                                          .padding(.bottom, 40)
+                                      
+                                  }
+                                  
+                                  
+                                }
+                              ZStack{
+                                  RoundedRectangle(cornerRadius: 10)
+                                      .fill(Color.GraySky)
+                                      .frame(width: 350, height: 80)
+                                      .opacity(0.7)
+                                  VStack(alignment: .leading, spacing: 5){
+                                      Text("묻고 답하기")
+                                          .font(.system(size: 24))
+                                          .fontWeight(.bold)
+                                          .foregroundColor(Color.MainColor)
+                                          
+                                      Text("새로운 답변이 업데이트 되었어요 ~")
+                                          .font(.system(size: 18))
+                                          .fontWeight(.medium)
+                                          .foregroundColor(Color.black)
+                                          
+                                  }.padding(.trailing, 70)
+                                 
+                                  
+                              }
+                              
+                          }.offset(y: -250)
+                          
                           Button {
                           } label: {
                              Image("Pang2")
@@ -49,6 +107,7 @@ struct HomeView : View {
                                       .padding(.top, 400)
                                   
                               }
+                         
                           }
                       }
                     }
