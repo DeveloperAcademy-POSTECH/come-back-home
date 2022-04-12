@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView : View {
     @State var email = ""
     @State var pass = ""
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         VStack() {
@@ -70,9 +71,15 @@ struct LoginView : View {
             .padding(.bottom, 140)
         }
         .padding(.horizontal, 20)
-        .navigationBarItems(leading: Button(action: {}) {
-            Image(systemName: "arrow.backward")
-        })
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: { presentationMode.wrappedValue.dismiss() }) {
+                    Image(systemName: "arrow.backward")
+                        .foregroundColor(Color("Black1"))
+                }.buttonStyle(.plain)
+            }
+        }
     }
 }
 
