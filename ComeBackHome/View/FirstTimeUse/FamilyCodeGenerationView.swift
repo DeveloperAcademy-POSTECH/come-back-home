@@ -25,7 +25,10 @@ struct FamilyCodeGenerationView: View {
                 .fontWeight(.bold)
                 .padding(.bottom, 32)
             
-            Button(action: {}) {
+            Button(action: {
+                UIPasteboard.general.string = code
+                
+            }) {
                 ButtonContent(text: "초대코드 복사", textColor: Color("MainColor"), backgroundColor: Color("Black5"))
             }
             
