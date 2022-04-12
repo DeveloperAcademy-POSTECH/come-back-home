@@ -12,7 +12,11 @@ var img = [
     UIImage(named: "Food0"),
     UIImage(named: "Food1"),
     UIImage(named: "Food2"),
-    UIImage(named: "Food3")
+    UIImage(named: "Food3"),
+    UIImage(named: "Food4"),
+    UIImage(named: "Food5"),
+    UIImage(named: "Food6"),
+    UIImage(named: "Food7")
 ]
 
 var user: [User] = [
@@ -26,9 +30,12 @@ var user: [User] = [
 var menu: [Menu] = [
     Menu(title: "아침", text: "친구가 사 온 케이크 먹었다~", imgArr: img[0] ?? UIImage(), time: Date(), commentArr: [comment[0], comment[1]], heart: [user[1], user[3]]),
     Menu(title: "점심", text: "김치볶음밥에 계란 후라이!", imgArr: img[1] ?? UIImage(), time: Date(), commentArr: [comment[0], comment[1]], heart: [user[1], user[3]]),
-    Menu(title: "저녁", text: "맛있는 수제비~", imgArr: img[2] ?? UIImage(), time: Date(), commentArr: [comment[0]], heart: [user[1], user[3]]),
-    Menu(title: "아침", text: "잉글리시 브랙퍼스트에 양송이 추가해서 건강한 아침!", imgArr: img[0] ?? UIImage(), time: Date(), commentArr: [], heart: [ user[3]]),
-    Menu(title: "점심", text: "간단하게 라면", imgArr: img[1] ?? UIImage(), time: Date(), commentArr: [comment[0], comment[1]], heart: [ user[3]])
+    Menu(title: "저녁", text: "멜론~", imgArr: img[2] ?? UIImage(), time: Date(), commentArr: [comment[0]], heart: [user[1], user[3]]),
+    Menu(title: "아침", text: "초밥~", imgArr: img[3] ?? UIImage(), time: Date(), commentArr: [], heart: [ user[3]]),
+    Menu(title: "점심", text: "바나나 우유~", imgArr: img[4] ?? UIImage(), time: Date(), commentArr: [comment[0], comment[1]], heart: [ user[3]]),
+    Menu(title: "저녁", text: "아보카도~", imgArr: img[5] ?? UIImage(), time: Date(), commentArr: [comment[0], comment[1]], heart: [ user[3]]),
+    Menu(title: "점심", text: "만둣국~", imgArr: img[6] ?? UIImage(), time: Date(), commentArr: [comment[0], comment[1]], heart: [ user[3]]),
+    Menu(title: "저녁", text: "샌드위치~", imgArr: img[7] ?? UIImage(), time: Date(), commentArr: [comment[0], comment[1]], heart: [ user[3]])
 ]
 
 var comment: [Comment] = [
@@ -38,8 +45,8 @@ var comment: [Comment] = [
 
 var post: [Post] = [
     Post(author: user[0], menuArr: [menu[0], menu[1], menu[2]], date: Date()),
-    Post(author: user[3], menuArr: [menu[3], menu[4]], date: Date()),
-    Post(author: user[2], menuArr: [menu[2], menu[3]], date: Date()),
+    Post(author: user[3], menuArr: [menu[3], menu[4], menu[5]], date: Date()),
+    Post(author: user[2], menuArr: [menu[6], menu[7]], date: Date()),
     Post(author: user[4], menuArr: [menu[1], menu[0]], date: Date())
 ]
 
@@ -75,7 +82,7 @@ struct TodaysMenuView: View {
                         Button {
                             appState.menuRootViewId = UUID()
                         } label: {
-                            Label("Back", systemImage: "chevron.backward")
+                            Label("Back", systemImage: "arrow.backward")
                         }
                     }
                 }
