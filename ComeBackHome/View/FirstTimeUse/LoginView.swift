@@ -43,31 +43,14 @@ struct Login : View {
                 .padding(.bottom, 10.0)
             
             VStack(){
-                    ZStack(){
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color(red: 0.973, green: 0.973, blue: 0.973))
-                            .frame(width: 350, height: 50)
-                        
-                        TextField("아이디를 입력하세요", text: self.$email)
-                            .padding(.leading, 30.0)
-                            .font(.system(size: 16))
-                            .foregroundColor(Color.gray)
-                            
-                    }
-                    ZStack(){
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color(red: 0.973, green: 0.973, blue: 0.973))
-                            .frame(width: 350, height: 50)
-                       
-                        SecureField("비밀번호를 입력하세요", text: self.$pass)
-                            .padding(.leading, 30.0)
-                            .font(.system(size: 16))
-                            .foregroundColor(Color.gray)
-                }
-            }.padding(.bottom, 10)
+                LoginTextField(placeholder: "아이디를 입력하세요", isPassword: false, input: self.$email)
+                
+                LoginTextField(placeholder: "비밀번호를 입력하세요", isPassword: true, input: self.$pass)
+            }
+            .padding(.bottom, 10)
+            .padding(.horizontal, 20)
           
             HStack(){
-                
                     Text("자동 로그인")
                         .font(.system(size: 16))
                         .fontWeight(.regular)
