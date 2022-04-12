@@ -82,7 +82,7 @@ struct TodaysMenuView: View {
                         Button {
                             appState.menuRootViewId = UUID()
                         } label: {
-                            Label("Back", systemImage: "chevron.backward")
+                            Label("Back", systemImage: "arrow.backward")
                         }
                     }
                 }
