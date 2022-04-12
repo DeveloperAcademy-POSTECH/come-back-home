@@ -51,6 +51,7 @@
 		C715AE4B27FD660C004BA6BF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE4A27FD660C004BA6BF /* Comment.swift */; };
 		C74F063727FDC80400B03A4F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F063627FDC80400B03A4F /* ImagePicker.swift */; };
 		C74F063A27FDDA5100B03A4F /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F063927FDDA5100B03A4F /* AddPostView.swift */; };
+		C74F066228049F7F00B03A4F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74F066128049F7F00B03A4F /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		C74F063627FDC80400B03A4F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C74F063827FDD70A00B03A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C74F063927FDDA5100B03A4F /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		C74F066128049F7F00B03A4F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 				C715AE4627FD65E3004BA6BF /* Post.swift */,
 				C715AE4427FD65D7004BA6BF /* User.swift */,
 				C74F063627FDC80400B03A4F /* ImagePicker.swift */,
+				C74F066128049F7F00B03A4F /* AppState.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				2535DD3F28002E7E00A2D118 /* QnaQuestionRow.swift in Sources */,
 				C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */,
 				21FF1F342800229E006EB909 /* AddFamilyView.swift in Sources */,
+				C74F066228049F7F00B03A4F /* AppState.swift in Sources */,
 				C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */,
 				C715AE3927FD62D9004BA6BF /* DetailView.swift in Sources */,
 				2535DD3C28002E7E00A2D118 /* QnaTodaysQuestionView.swift in Sources */,
