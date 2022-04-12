@@ -17,7 +17,7 @@ struct QnaAnswerView: View {
         "Apr 3. 2022": "초등학생 때 잊혀지지 않는 재미있거나 창피했던 기억은?",
         "Apr 2. 2022": "할아버지, 할머니가 나이드셨구나 생각이 드는 순간은 언제인가요?"]
     
-    var date: String
+    var date: String = "Apr 6. 2022"
     
     var body: some View {
         NavigationView {
@@ -25,7 +25,7 @@ struct QnaAnswerView: View {
                 QnaTodaysQuestionView(date, todaysQuestionColor: Color("Black1"))
                 
                 // hard-coded data must be replaced with dynamic data
-                QnaTextEditorBox("Q. " + dateToQuestionDummy[date]!)
+                QnaTextEditorBox("Q. " + (dateToQuestionDummy[date] ?? "이번년도 가족과 함께 있던 시간 중 가장 좋았던 혹은 인상깊었던 순간은?"))
                 .padding(.bottom, 2.0)
                 
                 Spacer()

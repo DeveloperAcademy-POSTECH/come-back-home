@@ -38,6 +38,7 @@
 		2535DD4D28002ED000A2D118 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD4A28002ED000A2D118 /* Question.swift */; };
 		2535DD4E28002ED000A2D118 /* AnswerWithProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD4B28002ED000A2D118 /* AnswerWithProfile.swift */; };
 		2535DD4F28002ED000A2D118 /* Qna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD4C28002ED000A2D118 /* Qna.swift */; };
+		2553EBAC28061A1E00CC6988 /* QnaEditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2553EBAB28061A1E00CC6988 /* QnaEditButton.swift */; };
 		7042DD8028054EC70098E5F1 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042DD7F28054EC70098E5F1 /* ColorPalette.swift */; };
 		70FBF1882803F8D700E293F7 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1872803F8D700E293F7 /* SplashScreenView.swift */; };
 		70FBF1902803F99700E293F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF18F2803F99700E293F7 /* HomeView.swift */; };
@@ -115,6 +116,7 @@
 		2535DD4A28002ED000A2D118 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		2535DD4B28002ED000A2D118 /* AnswerWithProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerWithProfile.swift; sourceTree = "<group>"; };
 		2535DD4C28002ED000A2D118 /* Qna.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Qna.swift; sourceTree = "<group>"; };
+		2553EBAB28061A1E00CC6988 /* QnaEditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnaEditButton.swift; sourceTree = "<group>"; };
 		7042DD7F28054EC70098E5F1 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		70FBF1872803F8D700E293F7 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		70FBF18F2803F99700E293F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				2535DD3328002E7E00A2D118 /* QnaAnswerWithProfileView.swift */,
 				2535DD3428002E7E00A2D118 /* QnaTextEditorBox.swift */,
 				2535DD3528002E7E00A2D118 /* QnaQuestionRow.swift */,
+				2553EBAB28061A1E00CC6988 /* QnaEditButton.swift */,
 				2535DD3628002E7E00A2D118 /* QnaTextBox.swift */,
 				2535DD3728002E7E00A2D118 /* QnaDateText.swift */,
 			);
@@ -510,6 +513,7 @@
 				21D778C328057C05008519CA /* FamilyCodeInputView.swift in Sources */,
 				21D778BD28055D72008519CA /* FamilySelectionButtonContent.swift in Sources */,
 				2535DD3F28002E7E00A2D118 /* QnaQuestionRow.swift in Sources */,
+				2553EBAC28061A1E00CC6988 /* QnaEditButton.swift in Sources */,
 				70FBF19A2803FA2D00E293F7 /* Background.swift in Sources */,
 				C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */,
 				C74F066228049F7F00B03A4F /* AppState.swift in Sources */,
