@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeView : View {
       
-//       @State var isNavigationBarHidden : Bool = false
            
            var body: some View {
                
@@ -17,17 +16,14 @@ struct HomeView : View {
                   NavigationView {
                       ZStack{
                       Background()
-                        
-                         .navigationBarTitle("Home")
-                         .navigationBarTitleDisplayMode(.inline)
+                          
                          .toolbar {
                              
                              ToolbarItem(placement: .navigationBarLeading) {
                                  Button {
                                  } label: {
-                                     NavigationLink(destination: GiftView()) {
-                                         Label("Gift", systemImage: "gift.fill")
-                                             .foregroundColor(.MainColor)
+                                     NavigationLink(destination: MyPangView()) {
+                                         Label("MyPang", systemImage: "person.fill")
                                              .opacity(0.7)
                                      }
                                  }
@@ -38,7 +34,6 @@ struct HomeView : View {
                                  } label: {
                                      NavigationLink(destination: AlarmView()) {
                                          Label("Alarm", systemImage: "bell.fill")
-                                             .foregroundColor(.MainColor)
                                              .opacity(0.7)
                                      }
                                  }
@@ -46,8 +41,7 @@ struct HomeView : View {
                          }
                           Button {
                           } label: {
-                              NavigationLink(destination: EmotionView()) {
-                                  Image("Pang2")
+                             Image("Pang2")
                                       .resizable()
                                       .aspectRatio(contentMode: .fit)
                                       .frame(width: 60, height: 60)
@@ -59,7 +53,7 @@ struct HomeView : View {
                       }
                     }
                 }
-           }
+           
 
                
 

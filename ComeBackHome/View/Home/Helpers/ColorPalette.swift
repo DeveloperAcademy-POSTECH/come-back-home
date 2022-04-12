@@ -1,8 +1,8 @@
 //
-//  Color.swift
+//  ColorPalette.swift
 //  ComeBackHome
 //
-//  Created by Jun.Mac on 2022/04/11.
+//  Created by Jun.Mac on 2022/04/12.
 //
 
 import Foundation

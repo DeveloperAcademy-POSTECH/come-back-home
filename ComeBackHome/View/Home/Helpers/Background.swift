@@ -19,13 +19,6 @@ struct Background : View {
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
             
-            Text("Welcom To \nMy Lovely House!")
-                .font(.system(size: 30))
-                .fontWeight(.bold)
-                .foregroundColor(Color(red: -0.291, green: 0.623, blue: 0.765))
-                .multilineTextAlignment(.center)
-                .offset(y: -150)
-                
             Image("Igloo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
