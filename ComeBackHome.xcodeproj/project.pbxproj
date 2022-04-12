@@ -10,6 +10,7 @@
 		214E6FFC280515F800BB75E4 /* ButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214E6FFB280515F800BB75E4 /* ButtonContent.swift */; };
 		21D778B2280548E6008519CA /* LinkText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D778B1280548E6008519CA /* LinkText.swift */; };
 		21D778B428054CEC008519CA /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D778B328054CEC008519CA /* LoginTextField.swift */; };
+		21D778B62805546D008519CA /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D778B52805546D008519CA /* StartingView.swift */; };
 		21FF1F332800229E006EB909 /* MyRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2B2800229E006EB909 /* MyRoomView.swift */; };
 		21FF1F342800229E006EB909 /* AddFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2D2800229E006EB909 /* AddFamilyView.swift */; };
 		21FF1F352800229E006EB909 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */; };
@@ -77,6 +78,7 @@
 		214E6FFB280515F800BB75E4 /* ButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonContent.swift; sourceTree = "<group>"; };
 		21D778B1280548E6008519CA /* LinkText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkText.swift; sourceTree = "<group>"; };
 		21D778B328054CEC008519CA /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		21D778B52805546D008519CA /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
 		21FF1F2B2800229E006EB909 /* MyRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomView.swift; sourceTree = "<group>"; };
 		21FF1F2D2800229E006EB909 /* AddFamilyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFamilyView.swift; sourceTree = "<group>"; };
 		21FF1F2E2800229E006EB909 /* AccountSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		214E6FF82805114700BB75E4 /* FirstTimeUse */ = {
 			isa = PBXGroup;
 			children = (
+				21D778B52805546D008519CA /* StartingView.swift */,
 				703713BE280028AC00596219 /* LoginView.swift */,
 				21D778B028054656008519CA /* Helpers */,
 			);
@@ -458,6 +461,7 @@
 				21FF1F332800229E006EB909 /* MyRoomView.swift in Sources */,
 				2535DD3928002E7E00A2D118 /* QnaListView.swift in Sources */,
 				C74F063A27FDDA5100B03A4F /* AddPostView.swift in Sources */,
+				21D778B62805546D008519CA /* StartingView.swift in Sources */,
 				2535DD4028002E7E00A2D118 /* QnaTextBox.swift in Sources */,
 				2535DD3F28002E7E00A2D118 /* QnaQuestionRow.swift in Sources */,
 				C715AE3B27FD632F004BA6BF /* CommentModalView.swift in Sources */,

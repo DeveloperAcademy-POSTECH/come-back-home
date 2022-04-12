@@ -20,7 +20,6 @@ struct ButtonContent: View {
             .frame(maxWidth: .infinity)
             .background(backgroundColor)
             .cornerRadius(8)
-            .padding(.horizontal, 20)
     }
 }
 
