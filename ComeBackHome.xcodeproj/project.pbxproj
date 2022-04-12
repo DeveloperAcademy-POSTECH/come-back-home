@@ -24,7 +24,6 @@
 		21FF1F392800229E006EB909 /* MyRoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF1F322800229E006EB909 /* MyRoomButton.swift */; };
 		2535DD3828002E7E00A2D118 /* QnaFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD2D28002E7E00A2D118 /* QnaFamilyView.swift */; };
 		2535DD3928002E7E00A2D118 /* QnaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD2E28002E7E00A2D118 /* QnaListView.swift */; };
-		2535DD3A28002E7E00A2D118 /* QnaPersonalTodaysQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD2F28002E7E00A2D118 /* QnaPersonalTodaysQuestionView.swift */; };
 		2535DD3B28002E7E00A2D118 /* QnaAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD3028002E7E00A2D118 /* QnaAnswerView.swift */; };
 		2535DD3C28002E7E00A2D118 /* QnaTodaysQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD3228002E7E00A2D118 /* QnaTodaysQuestionView.swift */; };
 		2535DD3D28002E7E00A2D118 /* QnaAnswerWithProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535DD3328002E7E00A2D118 /* QnaAnswerWithProfileView.swift */; };
@@ -102,7 +101,6 @@
 		21FF1F322800229E006EB909 /* MyRoomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomButton.swift; sourceTree = "<group>"; };
 		2535DD2D28002E7E00A2D118 /* QnaFamilyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnaFamilyView.swift; sourceTree = "<group>"; };
 		2535DD2E28002E7E00A2D118 /* QnaListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnaListView.swift; sourceTree = "<group>"; };
-		2535DD2F28002E7E00A2D118 /* QnaPersonalTodaysQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnaPersonalTodaysQuestionView.swift; sourceTree = "<group>"; };
 		2535DD3028002E7E00A2D118 /* QnaAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnaAnswerView.swift; sourceTree = "<group>"; };
 		2535DD3228002E7E00A2D118 /* QnaTodaysQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnaTodaysQuestionView.swift; sourceTree = "<group>"; };
 		2535DD3328002E7E00A2D118 /* QnaAnswerWithProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnaAnswerWithProfileView.swift; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 			children = (
 				2535DD2D28002E7E00A2D118 /* QnaFamilyView.swift */,
 				2535DD2E28002E7E00A2D118 /* QnaListView.swift */,
-				2535DD2F28002E7E00A2D118 /* QnaPersonalTodaysQuestionView.swift */,
 				2535DD3028002E7E00A2D118 /* QnaAnswerView.swift */,
 				2535DD3128002E7E00A2D118 /* Helpers */,
 			);
@@ -549,7 +546,6 @@
 				21FF1F362800229E006EB909 /* AppSettingsView.swift in Sources */,
 				70FBF1A4280453D400E293F7 /* MyPangView.swift in Sources */,
 				C715AE4B27FD660C004BA6BF /* Comment.swift in Sources */,
-				2535DD3A28002E7E00A2D118 /* QnaPersonalTodaysQuestionView.swift in Sources */,
 				21D778C72805BC1D008519CA /* LoginView.swift in Sources */,
 				21FF1F382800229E006EB909 /* FamilyMember.swift in Sources */,
 				C715AE0F27FD612D004BA6BF /* ComeBackHomeApp.swift in Sources */,

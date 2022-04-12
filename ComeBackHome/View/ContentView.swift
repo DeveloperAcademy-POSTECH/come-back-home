@@ -19,8 +19,8 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "house.fill")
                 }
-            // hard-coded data must be replaced with dynamic data
-            QnaPersonalTodaysQuestionView(date: "April 7. 2022")
+            // QnaAnswerView(date: Qna.dateToString(Date()))
+            QnaAnswerView(date: "Apr 7. 2022") // temporary
                 .tabItem {
                     Image(systemName: "book")
                 }
