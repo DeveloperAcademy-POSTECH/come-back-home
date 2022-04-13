@@ -23,8 +23,11 @@ struct HomeView : View {
                                  Button {
                                  } label: {
                                      NavigationLink(destination: MyPangView()) {
-                                         Label("MyPang", systemImage: "person.fill")
-                                             .opacity(0.7)
+                                        Image("Pangicon")
+                                             .resizable()
+                                             .aspectRatio(contentMode: .fit)
+                                             .frame(width: 20)
+                                             
                                              
                                      }
                                  }
@@ -35,7 +38,8 @@ struct HomeView : View {
                                  } label: {
                                      NavigationLink(destination: AlarmView()) {
                                          Label("Alarm", systemImage: "bell.fill")
-                                             .opacity(0.7)
+                                             .foregroundColor(Color.white)
+                                            
                                      }
                                  }
                              }

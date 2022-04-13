@@ -25,10 +25,10 @@ struct Background : View {
                 .frame(width: 300)
                 .offset(x: 100 ,y: 40)
             
-            Image("PangFam")
+            Image("HomePang")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 400)
+                .frame(width: 250)
                 .offset(x: 0 ,y: 120)
             
             }

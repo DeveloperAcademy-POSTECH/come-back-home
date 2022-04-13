@@ -44,7 +44,6 @@
 		70FBF1902803F99700E293F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF18F2803F99700E293F7 /* HomeView.swift */; };
 		70FBF1922803F9B900E293F7 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1912803F9B900E293F7 /* AlarmView.swift */; };
 		70FBF19A2803FA2D00E293F7 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1992803FA2D00E293F7 /* Background.swift */; };
-		70FBF19C2803FA4400E293F7 /* BackgroundOpacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF19B2803FA4400E293F7 /* BackgroundOpacity.swift */; };
 		70FBF1A4280453D400E293F7 /* MyPangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FBF1A3280453D400E293F7 /* MyPangView.swift */; };
 		C715AE0F27FD612D004BA6BF /* ComeBackHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */; };
 		C715AE1127FD612D004BA6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715AE1027FD612D004BA6BF /* ContentView.swift */; };
@@ -122,7 +121,6 @@
 		70FBF18F2803F99700E293F7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		70FBF1912803F9B900E293F7 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		70FBF1992803FA2D00E293F7 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		70FBF19B2803FA4400E293F7 /* BackgroundOpacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOpacity.swift; sourceTree = "<group>"; };
 		70FBF1A3280453D400E293F7 /* MyPangView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPangView.swift; sourceTree = "<group>"; };
 		C715AE0B27FD612D004BA6BF /* ComeBackHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComeBackHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C715AE0E27FD612D004BA6BF /* ComeBackHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeBackHomeApp.swift; sourceTree = "<group>"; };
@@ -259,7 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				70FBF1992803FA2D00E293F7 /* Background.swift */,
-				70FBF19B2803FA4400E293F7 /* BackgroundOpacity.swift */,
 				7042DD7F28054EC70098E5F1 /* ColorPalette.swift */,
 			);
 			path = Helpers;
@@ -540,7 +537,6 @@
 				2535DD4728002EB100A2D118 /* ConfirmButton.swift in Sources */,
 				2535DD4828002EB100A2D118 /* QnaProfileView.swift in Sources */,
 				2535DD4F28002ED000A2D118 /* Qna.swift in Sources */,
-				70FBF19C2803FA4400E293F7 /* BackgroundOpacity.swift in Sources */,
 				2535DD3E28002E7E00A2D118 /* QnaTextEditorBox.swift in Sources */,
 				21FF1F352800229E006EB909 /* AccountSettingsView.swift in Sources */,
 				70FBF1902803F99700E293F7 /* HomeView.swift in Sources */,
