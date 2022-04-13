@@ -8,4 +8,5 @@ import Foundation
 
 final class AppState : ObservableObject {
     @Published var menuRootViewId = UUID()
+    @Published var isAnswered: Bool = false
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct QnaTextBox: View {
+    @EnvironmentObject var appState: AppState
+    
     var date: String
     var background: Color
     var text: Text
@@ -29,6 +31,9 @@ struct QnaTextBox: View {
                     NavigationLink(destination: QnaAnswerView(date: date)) {
                         QnaEditButton()
                     }
+                    .simultaneousGesture(TapGesture().onEnded({
+                        appState.isAnswered = true
+                    }))
                 }
                 .padding(EdgeInsets(top: 0.0, leading: 0.0, bottom: -22.0, trailing: -20.0))
             }

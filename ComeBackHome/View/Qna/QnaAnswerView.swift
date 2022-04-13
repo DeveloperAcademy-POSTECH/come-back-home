@@ -17,6 +17,10 @@ struct QnaAnswerView: View {
         "Apr 3. 2022": "초등학생 때 잊혀지지 않는 재미있거나 창피했던 기억은?",
         "Apr 2. 2022": "할아버지, 할머니가 나이드셨구나 생각이 드는 순간은 언제인가요?"]
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    @EnvironmentObject var appState: AppState
+    
     var date: String = "Apr 6. 2022"
     
     var body: some View {
@@ -36,8 +40,14 @@ struct QnaAnswerView: View {
             .navigationTitle(Qna.navigationTitle)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    NavigationLink(destination: QnaListView()) {
-                        Qna.navigationListButton
+                    if appState.isAnswered {
+                        Button(action: { presentationMode.wrappedValue.dismiss() }) {
+                            Qna.navigationBackButton
+                        }
+                    } else {
+                        NavigationLink(destination: QnaListView()) {
+                            Qna.navigationListButton
+                        }
                     }
                 }
                 

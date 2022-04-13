@@ -17,8 +17,6 @@ struct QnaFamilyView: View {
         AnswerWithProfile(id: 1002, imageSet: "Pang4", name: "Timo", answer: "나는 로운이 용돈줬을 때 ~ ㅎㅎ\n장난이고 등산 갔을 때가 제일 좋았다"),
     ]
     
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
     var date: String
     
     var body: some View {
