@@ -92,7 +92,7 @@ struct SheetCommentView: View {
                 .fontWeight(.light)
                 .foregroundColor(Color("Black2"))
         }
-        .padding(.vertical, 10)
+        .padding(.vertical, 7)
     }
 }
 
@@ -102,7 +102,7 @@ struct CommentWritingView: View {
     @State var content: String = ""
     var body: some View {
         HStack(spacing: 10) {
-            TextField("눌러서 댓글을 남기세요.", text: $content)
+            TextField("  눌러서 댓글을 남기세요.", text: $content)
                 .background(RoundedRectangle(cornerRadius: 6).fill(Color("Black4")).frame(width: 275, height: 40))
                 .frame(width: 275, height: 40)
             Button {
@@ -119,5 +119,6 @@ struct CommentWritingView: View {
                 Image(systemName: "paperplane.fill")
             }
         }
+        .padding(.top, 5)
     }
 }

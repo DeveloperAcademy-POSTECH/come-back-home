@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AccountSettingsView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     let family = [
         FamilyMember(id: 1, name: "XXX", role: "아빠"),
         FamilyMember(id: 2, name: "XXX", role: "엄마"),
@@ -54,17 +56,6 @@ struct AccountSettingsView: View {
                     ForEach(family) { member in
                         InfoRow(left: member.role, right: member.name)
                     }
-                    
-                    NavigationLink(destination: AddFamilyView()) {
-                        HStack(spacing: 16) {
-                            Image(systemName: "plus")
-                                .foregroundColor(Color("MainColor"))
-                            Text("가족 추가")
-                            Spacer()
-                        }.padding(.horizontal, 5)
-                    }
-                    .buttonStyle(.plain)
-                    .padding(.vertical, 15)
                 }
                 
                 Spacer()
@@ -72,6 +63,16 @@ struct AccountSettingsView: View {
             .navigationTitle("계정/가족 관리")
             .navigationBarTitleDisplayMode(.inline)
             .padding(20)
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: { presentationMode.wrappedValue.dismiss() }) {
+                        Image(systemName: "arrow.backward")
+                    }
+                    .buttonStyle(.plain)
+                    .foregroundColor(Color("Black1"))
+                }
+            }
         }
     }
 }

@@ -16,6 +16,8 @@ struct AddPostView: View {
     @Binding var isShowingSheet: Bool
     @State var isImageSelected = false
     
+    @State private var presentingToast: Bool = false
+    
     @State var imageSelected = UIImage()
     
     @State private var time = Date()
@@ -106,6 +108,7 @@ struct AddPostView: View {
                 }, trailing: Button(action: {
                     self.isShowingSheet = false
                     //Upload data
+                    self.presentingToast = true
                 }) {
                     Text("Done").bold()
                 })
@@ -129,7 +132,7 @@ struct MealButton: View {
                 .frame(width: 69, height: 37, alignment: .center))
             .frame(width: 69, height: 37, alignment: .center)
             .font(.body)
-            .padding(.trailing, 12)
+            .padding(.trailing, 5)
             .onTapGesture {
                 isOnTapped.toggle()
             }

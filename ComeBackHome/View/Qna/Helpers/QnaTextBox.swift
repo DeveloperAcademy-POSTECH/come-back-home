@@ -8,21 +8,34 @@
 import SwiftUI
 
 struct QnaTextBox: View {
-    var background: Color
-    var topText: Text
-    var bottomText: Text?
+    @EnvironmentObject var appState: AppState
     
-    init(_ background: Color, _ topText: Text, bottomText: Text? = nil) {
+    var date: String
+    var background: Color
+    var text: Text
+    var isEditable: Bool? = false
+    
+    init(_ date: String, _ background: Color, _ text: Text, isEditable: Bool = false) {
+        self.date = date
         self.background = background
-        self.topText = topText
-        self.bottomText = bottomText
+        self.text = text
+        self.isEditable = isEditable
     }
     
     var body: some View {
-        VStack(spacing: 29.0) {
-            TextBlock(topText)
-            if bottomText != nil {
-                TextBlock(bottomText!)
+        VStack(spacing: 0.0) {
+            TextBlock(text)
+            if isEditable! {
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: QnaAnswerView(date: date)) {
+                        QnaEditButton()
+                    }
+                    .simultaneousGesture(TapGesture().onEnded({
+                        appState.isAnswered = true
+                    }))
+                }
+                .padding(EdgeInsets(top: 0.0, leading: 0.0, bottom: -22.0, trailing: -20.0))
             }
         }
         .padding(EdgeInsets(top: 22.0, leading: 20.0, bottom: 22.0, trailing: 20.0))
@@ -35,22 +48,15 @@ struct QnaTextBox_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             QnaTextBox(
-                Color("GraySky"),
-                Text("Q. " + "오늘은 내가 요리사! 다가오는 일요일,\n우리 가족을 살찌울 필살기 요리가 있다면 ?")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("MainColor")),
-                bottomText: Text("이곳을 눌러 답변을 입력해주세요.")
-                    .font(.headline)
-                    .foregroundColor(Color("Black2")))
-            
-            QnaTextBox(
+                "Apr 7. 2022",
                 Color("Black5"),
-                Text("Q. " + "이번년도 가족과 함께 있던 시간 중\n가장 좋았던 혹은 인상깊었던 순간은?")
+                Text("Q. " + "이번년도 가족과 함께 있던 시간 중 가장 좋았던 혹은 인상깊었던 순간은?")
                     .font(.headline)
-                    .foregroundColor(Color("Black1")))
+                    .foregroundColor(Color("Black3")),
+                isEditable: true)
             
             QnaTextBox(
+                "Apr 7. 2022",
                 Color("GraySky"),
                 Text("여름에 캠핑장에 갔을 때 !\n오랜만에 모여서 고기 구워먹고 좋았어요~")
                     .font(.headline)
